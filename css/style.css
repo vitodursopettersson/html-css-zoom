@@ -10,6 +10,49 @@ Reset Default
     box-sizing: border-box;
 }
 
+body {
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+/* 
+--------------
+Header
+--------------
+*/
+
+header {
+    background-color: black;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.container--tool {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    margin-top: 6px;
+    margin-right: 6px;
+    gap: 6px;
+}
+
+.tool__top-bar {
+    background-color: #4C4D4F;
+    padding: 4px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tool__top-bar i {
+    font-size: 14px;
+}
+
 /* 
 --------------
 Main
@@ -18,7 +61,7 @@ Main
 
 main {
     background-color: black;
-    height: 100vh;
+    height: calc(100vh - 40px);
 }
 
 .container {
