@@ -31,7 +31,7 @@ header {
     z-index: 1;
 }
 
-.container--tool {
+.container--header {
     position: absolute;
     right: 0;
     top: 0;
@@ -41,7 +41,7 @@ header {
     gap: 6px;
 }
 
-.tool__top-bar {
+.header__tool {
     background-color: #4C4D4F;
     padding: 4px 6px;
     border-radius: 5px;
@@ -49,7 +49,7 @@ header {
     font-weight: 400;
 }
 
-.tool__top-bar i {
+.header__tool i {
     font-size: 14px;
 }
 
@@ -98,4 +98,65 @@ main {
     background-color: rgba(0, 0, 0, 0.500);
     position: absolute;
     bottom: 0;
+}
+
+/* 
+--------------
+Footer
+--------------
+*/
+
+footer {
+    background-color: #222222;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Icon Footer */
+
+
+.footer__tool {
+    display: flex;
+}
+
+.footer__tool__container {
+    display: flex;
+    padding: 20px;
+}
+
+.footer__tool__container:hover {
+    background-color: #353535;
+}
+
+.footer__tool__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__tool__icon__menu {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    margin-right: 8px;
+}
+
+.footer__tool__icon__menu i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer__tool__icon i {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.footer__tool__icon span {
+    font-size: 15px;
 }
