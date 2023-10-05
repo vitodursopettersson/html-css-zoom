@@ -9,3 +9,50 @@ Reset Default
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+--------------
+Main
+--------------
+*/
+
+main {
+    background-color: black;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.user-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 60px;
+}
+
+/* User card */
+
+.user__card {
+    width: 160px;
+    margin-bottom: 3px;
+}
+
+.user__card {
+    position: relative;
+}
+
+.user__image img {
+    width: 100%;
+    display: block;
+}
+
+.user__name {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.500);
+    position: absolute;
+    bottom: 0;
+}
