@@ -115,6 +115,7 @@ main {
     width: 220px;
     width: 220px;
     position: relative;
+    cursor: default;
 
 }
 
@@ -256,8 +257,8 @@ footer {
     display: flex;
     align-items: center;
     padding: 6px 4px;
-    margin: 4px;
     border-radius: 6px;
+    transform: translateX(10px);
 }
 
 .footer__tool__icon__menu i {
