@@ -12,11 +12,31 @@ Reset Default
 
 body {
     color: white;
-    font-family: Roboto, sans-serif;
+    font-family: Lato, sans-serif;
     background-color: black;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #383838 #000000;
+}
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #383838;
+    border-radius: 10px;
+    border: 10px none #383838;
+}
 
 /* 
 --------------
@@ -69,7 +89,9 @@ Main
 
 main {
     background-color: black;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 120px);
+    margin-top: 40px;
+    margin-bottom: 70px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -105,25 +127,41 @@ main {
 
 .user__name {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.500);
+    background-color: rgba(35, 37, 37, 0.800);
     position: absolute;
     bottom: 0;
     padding: 4px 6px;
     display: flex;
     align-items: center;
-    border-radius: 0px 2px 0px 0px;
+    border-radius: 4px;
+    margin: 2px;
 }
 
 .user__name i {
     font-size: 13px;
     margin-right: 5px;
+    color: #DE2828;
 }
 
 .user__name span {
-    font-size: 16px;
+    font-size: 12px;
 }
 
+.user__tool {
+    background-color: #0E72EC;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    opacity: 0;
 
+}
+
+.user__card:hover .user__tool {
+    opacity: 1;
+    transition: 0.1s ease-in;
+}
 
 /* 
 --------------
@@ -133,7 +171,8 @@ Footer
 
 footer {
     background-color: #222222;
-    height: 80px;
+    color: #A9A9AA;
+    height: 60px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -143,19 +182,21 @@ footer {
 .container--footer {
     display: flex;
     height: 100%;
+    padding: 4px 0px 4px 0px;
+
 }
 
 .footer__column--start {
-    width: 25%;
+    width: 16%;
 }
 
 .footer__column--center {
-    width: 50%;
+    width: 72%;
     justify-content: center;
 }
 
 .footer__column--end {
-    width: 25%;
+    width: 12%;
     justify-content: end;
 }
 
@@ -170,10 +211,16 @@ footer {
     align-items: center;
     height: 100%;
     padding: 0px 20px;
+    border-radius: 8px;
 }
 
 .footer__tool__container:hover {
-    background-color: #353535;
+    background-color: #303030;
+    transition: 0.1s ease-in;
+}
+
+.footer__tool__icon__menu:hover {
+    background-color: #434343;
     transition: 0.1s ease-in;
 }
 
@@ -202,15 +249,17 @@ footer {
 .footer__tool__icon__menu {
     display: flex;
     align-items: center;
+    padding: 6px 4px;
+    margin: 4px;
+    border-radius: 6px;
 }
 
 .footer__tool__icon__menu i {
     font-size: 11px;
-    padding-left: 10px;
 }
 
 .footer__tool__icon i {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 6px;
 }
 
@@ -223,5 +272,6 @@ footer {
 }
 
 .footer__tool__icon span {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 400;
 }
